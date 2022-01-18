@@ -5,25 +5,8 @@ import pandas as pd
 
 from flask import Flask, request, Response
 
-# constants
-TOKEN = '5069279315:AAFpKPyKFhQy7vgw0m2hGJzntQkI-It1Qdc'
-
-
-## Info about the Bot
-#https://api.telegram.org/bot5069279315:AAFpKPyKFhQy7vgw0m2hGJzntQkI-It1Qdc/getMe
-
-## get updates
-#https://api.telegram.org/bot5069279315:AAFpKPyKFhQy7vgw0m2hGJzntQkI-It1Qdc/getUpdates
-
-## Webhook
-#https://api.telegram.org/bot5069279315:AAFpKPyKFhQy7vgw0m2hGJzntQkI-It1Qdc/setWebhook?url=https://35d9de5a09db98.localhost.run
-
-## Webhook heroku
-#https://api.telegram.org/bot5069279315:AAFpKPyKFhQy7vgw0m2hGJzntQkI-It1Qdc/setWebhook?url=https://rossmannstoresales-bot.herokuapp.com/
-
-## send message
-#https://api.telegram.org/bot5069279315:AAFpKPyKFhQy7vgw0m2hGJzntQkI-It1Qdc/sendMessage?chat_id=943374350&text=Hi Reginaldo, I am doing good, tks!
-
+# constants (colocar o token do telegram na variável)
+TOKEN = 'TOKEN' 
 
 
 def send_message(chat_id, text):
